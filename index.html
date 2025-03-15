@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+    <link rel="stylesheet" href="assets/styles/css/main.css">
+    <script src="assets/scripts/script.js" defer></script>
+</head>
+<body>
+    <h1>TO DO LIST</h1>
+    <main role="main">
+        <!-- Champ pour saisir les informations de l'activité -->
+        <section class="form-group">
+            <form action="" id="formulaire">
+                <input type="text" id="titreActivite" name="titreActivite" placeholder="Titre activité"  >
+                <textarea id="descriptionActivite" name="descriptionActivite" placeholder="Description (facultatif)"></textarea>
+                <input type="submit" id="btnAjouter" name="btnAjouter" value="Ajouter">
+            </form>
+        </section>
+        <!-- message d'erreur -->
+        <div class="message">
+            
+        </div>
+        <!-- Zone de stockage des activités ajoutées -->
+        <section class="list"></section>
+    </main>
+    <footer>
+        <p>&copy; MbayeDev 2025 Tout droits réservé</p>
+    </footer>
+</body>
+</html>

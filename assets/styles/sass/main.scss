@@ -1,0 +1,199 @@
+// typographie
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+// reset
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+// general
+
+// html, body, main {
+//     height: 100%;
+// }
+
+body {
+    background-color: #494949;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+         h1 {
+            color: #fff;
+            text-align: center;
+            margin-top: 25px;
+         }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group,
+.list {
+    box-shadow: 0px 0px 3px #7a7a7a;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #474645;
+    
+}
+// formulaire
+
+.form-group {
+    width: 500px;   
+    margin: 35px; 
+}
+
+#titreActivite,
+#descriptionActivite {
+    width: 100%;
+    outline: none;
+    border: 1px solid #0000001e;
+    border-radius: 5px;
+    background-color: #0000001e;
+    color: #fff;
+}
+
+#titreActivite {
+    height: 35px;
+    padding-left: 15px;
+}
+
+#titreActivite::placeholder, #descriptionActivite::placeholder{
+    color: #747373;
+    letter-spacing: 1px;
+}
+
+#descriptionActivite {
+    margin: 10px 0;
+    height: 90px;
+    padding: 15px;
+    resize: none;
+}
+
+#descriptionActivite,
+#descriptionActivite::placeholder,
+.info-description {
+    font-family: cursive;
+    font-style: italic;
+}
+
+#btnAjouter {
+    padding: 5px 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+#btnAjouter {
+    border-radius: 5px;
+    border: 1px solid #369ee4;
+    background-color: #369ee4;
+    color: #fff;
+
+        &:hover {
+            background-color: #187ec2;
+        }
+
+}
+
+// list
+
+.list {
+    margin: 35px;
+    max-width: 600px;
+    display: none;
+
+        .badge {
+            padding-left: 10px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+
+        .badge-a-faire {
+            background-color: #f5ab0a;
+        }
+        .badge-en-cours {
+            background-color: #369ee4;
+        }
+        .badge-termine {
+            background-color: #72f172;
+        }
+}     
+
+.list-info {
+    position: relative;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #353535;
+    width: 550px;
+
+        .info-title  {
+            margin-bottom: 10px;
+            display: inline;
+        }
+
+        .info-etat{
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            cursor: pointer;
+        }
+        
+        .info-description{
+            margin: 10px 0;
+            max-width: 450px;
+            font-weight: 100;
+            text-align: justify;
+        }
+
+        .icon-supprimer {
+            position: absolute;
+            display: inline;
+            bottom: 15px;
+            right: 25px;
+
+                .ri-delete-bin-line {
+                    font-size: 25px;
+                    cursor: pointer;
+                         
+                    &:hover {
+                        color: #ff0000;
+                    }
+                }
+        }
+}
+
+// message d'erreur
+
+.message {
+    display: none;
+    color: #fff;
+    font-weight: bold;
+    padding:  15px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+// footer
+
+footer {
+    position: fixed;
+    text-align: center;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    background-color: #353535;
+    width: 100%;
+    padding: 15px;
+    box-shadow: 0px -1px 2px #353535;
+}
+
+
